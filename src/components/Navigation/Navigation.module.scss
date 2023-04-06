@@ -1,0 +1,24 @@
+.nav {
+  background: linear-gradient(180deg, #54D3C2 0%, #30898A 100%);
+  border-radius: 56px 56px 0px 56px;
+  width: 127px;
+  height: 100vh;
+  padding-top: 55px;
+  padding-left: 32px;
+}
+
+.logo {
+  margin-bottom: 85px;
+}
+
+.category {
+  width: fit-content;
+  height: fit-content;
+  margin-bottom: 35px;
+  border-radius: 16px;
+  padding: 11px 11px 9px 11px;
+}
+
+.active {
+  background: rgba(169, 233, 224, 0.75);
+}
