@@ -1,20 +1,21 @@
 .nav {
+  position: relative;
   background: linear-gradient(180deg, #54D3C2 0%, #30898A 100%);
   border-radius: 56px 56px 0px 56px;
-  width: 127px;
+  width: 267px;
   height: 100vh;
   padding-top: 55px;
   padding-left: 32px;
 }
 
 .logo {
-  margin-bottom: 85px;
+  margin-bottom: 74px;
 }
 
 .category {
   width: fit-content;
   height: fit-content;
-  margin-bottom: 35px;
+  margin-bottom: 24px;
   border-radius: 16px;
   padding: 11px 11px 9px 11px;
 }
