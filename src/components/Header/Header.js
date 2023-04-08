@@ -71,7 +71,7 @@ const Header = () => {
             <p className={styles.occupation}>менеджер продаж</p>
           </div>
         </div>
-        <Dropdown
+        {/* <Dropdown
           menu={{
             item,
             selectable: true,
@@ -84,7 +84,7 @@ const Header = () => {
               <DownOutlined />
             </Space>
           </Typography.Link>
-        </Dropdown>
+        </Dropdown> */}
       </div>
     </div>
   );

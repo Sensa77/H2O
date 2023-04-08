@@ -1,0 +1,73 @@
+.searchSection {
+  display: flex;
+  justify-content: space-between;
+  padding: 38px 35px 41px 34px;
+  background: #ffffff;
+  border-radius: 32px;
+}
+
+.leftContent {
+  display: flex;
+  align-items: center;
+}
+
+.contactCount {
+  margin-right: 39px;
+  display: flex;
+  align-items: center;
+}
+
+.count {
+  margin-right: 14px;
+  font-size: 28px;
+  line-height: 44px;
+  color: #54d3c2;
+  letter-spacing: -0.56px;
+  font-weight: 600;
+}
+
+.label {
+  color: #6d7986;
+}
+
+.input {
+  width: 360px;
+}
+
+.input input {
+  background-color: #f8f8f8;
+  border: none;
+  height: 48px;
+  border-radius: 24px;
+  border-start-end-radius: 24px !important;
+  border-end-end-radius: 24px !important;
+}
+
+.input span:nth-child(2) {
+  display: none;
+}
+
+.input span span span {
+  display: none;
+}
+
+.input button {
+  display: none;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  height: 48px;
+  width: 198px;
+  border: 1.5px solid #54d3c2 !important;
+  border-radius: 24px !important;
+}
+
+.button span {
+  font-size: 16px;
+  line-height: 44px;
+  color: #54d3c2;
+  letter-spacing: -0.56px;
+  font-weight: 600;
+}
