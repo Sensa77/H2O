@@ -1,9 +1,6 @@
 import React from "react";
 import styles from "./SearchSection.module.scss";
-import { Input } from "antd";
 import { Button } from "antd";
-
-const { Search } = Input;
 
 const SearchSection = () => {
   return (
@@ -13,7 +10,11 @@ const SearchSection = () => {
           <span className={styles.count}>2335</span>
           <span className={styles.label}>Контактов</span>
         </div>
-        <Search placeholder="input search text" className={styles.input} />
+        {/* <Search placeholder="input search text" className={styles.input} /> */}
+        <form className={styles.form}>
+        <button type="button" className={styles.icon}/>
+        <input type="text" className={styles.input} placeholder="Поиск"/>
+        </form>
       </div>
       <Button className={styles.button} type="primary" ghost>
         Режим редактирования
