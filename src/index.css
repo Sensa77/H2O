@@ -1,3 +1,27 @@
+:root {
+  /* WHITE */
+  --color-white-0: #ffffff;
+
+  /* BLACK */
+  --color-black-0: #000000;
+
+  /* GREY */
+  --color-grey-0: #323F47;
+  --color-grey-1: #6D7986;
+  --color-grey-2: #989FA3;
+  --color-grey-3: #D2D1D1;
+  --color-grey-4: #F8F8F8;
+  --color-grey-5: rgba(248, 248, 248, 0.5);
+
+  /* GREEN */
+  --color-green-0: #54D3C2;
+  --color-green-1: rgba(169, 233, 224, 0.75);
+  --color-green-2: rgba(229, 248, 246, 0.5);
+
+  /* GRADIENT */
+  --color-gradient: linear-gradient(180deg, #54D3C2 0%, #30898A 100%);
+}
+
 body {
   margin: 0;
   font-size: 12px;

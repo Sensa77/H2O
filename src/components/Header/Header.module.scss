@@ -14,7 +14,7 @@
   display: block;
   width: 40px;
   height: 40px;
-  background-color: #ffffff;
+  background-color: var(--color-white-0);
   box-shadow: 0px 4px 18px rgba(210, 209, 209, 0.5);
   border-radius: 50%;
   border: none;
@@ -24,7 +24,7 @@
 
 .arrow:hover svg,
 .arrow:focus svg {
-  fill: black;
+  fill: var(--color-black-0);
   transition: 0.4s;
 }
 
@@ -34,7 +34,7 @@
 
 .arrow svg {
   font-size: 22px;
-  fill: #989FA3;
+  fill: var(--color-grey-2);
 }
 
 .currentUser {
@@ -44,6 +44,6 @@
 
 .occupation {
   margin: 0;
-  color: #989FA3;
+  color: var(--color-grey-2);
 }
 

@@ -1,42 +1,37 @@
 .table {
   border-radius: 32px;
-  background-color: #FFFFFF !important;
+  background-color: var(--color-white-0) !important;
 }
 
 .table th {
-  background-color: #FFFFFF !important;
-  color: #54D3C2 !important;
+  background-color: var(--color-white-0) !important;
+  color: var(--color-green-0) !important;
 }
 
 .table td {
   font-size: 12px;
   line-height: 44px;
   font-weight: 600;
-  color: #6D7986;
+  color: var(--color-grey-1);
 }
 
 .table td:hover {
-  color: #54D3C2;
+  color: var(--color-green-0);
   cursor: pointer;
 } 
 
 .table tr:nth-child(even),
 .table tr:nth-child(even) td {
-  background-color: #F8F8F880;
+  background-color: var(--color-grey-5);
 }
 
 .table tr:nth-child(odd) {
-  background-color: #E5F8F680;
+  background-color: var(--color-green-2);
 }
 
 .table ul {
   margin: 33px 0 !important;
 }
-
-// .table li:nth-child(1),
-// .table li:nth-child(7) {
-//   margin-right: 39px !important;
-// }
 
 .table li {
   margin-left: 19px !important;
@@ -44,6 +39,6 @@
 
 .table li a,
 .table li button {
-  color: #323F47 !important;
+  color: var(--color-grey-0) !important;
   font-weight: 600;
 }

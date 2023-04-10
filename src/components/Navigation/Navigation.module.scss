@@ -1,6 +1,6 @@
 .nav {
   position: relative;
-  background: linear-gradient(180deg, #54D3C2 0%, #30898A 100%);
+  background: var(--color-gradient);
   border-radius: 56px 56px 0px 56px;
   width: 267px;
   height: auto;
@@ -21,5 +21,5 @@
 }
 
 .active {
-  background: rgba(169, 233, 224, 0.75);
+  background: var(--color-green-1);
 }

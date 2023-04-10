@@ -6,7 +6,7 @@ import TableSection from "../TableSection/TableSection";
 const Content = () => {
   return (
     <div className={styles.content}>
-      <span className={styles.title}><b>Общая база сотрудников</b></span>
+      <span className={styles.title}>Общая база сотрудников</span>
       <SearchSection />
       <TableSection />
     </div>

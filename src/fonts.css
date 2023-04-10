@@ -24,3 +24,12 @@
     url("/public/fonts/ProximaNova-Black.woff") format("woff"),
     url("/public/fonts/ProximaNova-Black.woff2") format("woff2");
 }
+
+@font-face {
+  font-family: "Proxima Nova";
+  font-style: normal;
+  font-weight: 800;
+  src: url("/public/fonts/ProximaNova-Extrabld.ttf") format("ttf"),
+    url("/public/fonts/ProximaNova-Extrabld.woff") format("woff"),
+    url("/public/fonts/ProximaNova-Extrabld.woff2") format("woff2");
+}
