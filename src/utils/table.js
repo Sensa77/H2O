@@ -130,9 +130,10 @@ const columns = [
       },
       {
         title: 'Срок действия',
-        dataIndex: 'validity',
-        key: 'validity',
-        width: 113
+        dataIndex: 'validityPassport',
+        key: 'validityPassport',
+        width: 113,
+        render: (validityPassport, {afterValidityPassport}) => <span style={{color: afterValidityPassport ? 'var(--color-grey-1)' : 'var(--color-red-0)'}}>{validityPassport}</span>
       },
       {
         title: 'Место рождения',
@@ -163,9 +164,10 @@ const columns = [
       },
       {
         title: 'Срок действия',
-        dataIndex: 'validityDocuments',
-        key: 'validityDocuments',
-        width: 113
+        dataIndex: 'validityPatent',
+        key: 'validityPatent',
+        width: 113,
+        render: (validityPatent, {afterValidityPatent}) => <span style={{color: afterValidityPatent ? 'var(--color-grey-1)' : 'var(--color-red-0)'}}>{validityPatent}</span>
       },
       {
         title: 'СНИЛС',

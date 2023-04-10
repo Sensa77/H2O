@@ -18,6 +18,9 @@
   --color-green-1: rgba(169, 233, 224, 0.75);
   --color-green-2: rgba(229, 248, 246, 0.5);
 
+  /* RED */
+  --color-red-0: #FC5C65;
+
   /* GRADIENT */
   --color-gradient: linear-gradient(180deg, #54D3C2 0%, #30898A 100%);
 }
