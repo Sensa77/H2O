@@ -8,7 +8,11 @@ const debounceLodash = require('lodash.debounce');
 const SearchSection = ({setText}) => {
 
   const onChangeInput = (e) => {
-    setText(e.target.value)
+    if (e.keyCode === 13) {
+      e.keyCode = 0;
+      return false;
+  }
+    setText(e.target.value);
   }
 
   const debounce = debounceLodash(onChangeInput, 1000)
@@ -20,10 +24,9 @@ const SearchSection = ({setText}) => {
           <span className={styles.count}>{data.length}</span>
           <span className={styles.label}>Контактов</span>
         </div>
-        {/* <Search placeholder="input search text" className={styles.input} /> */}
         <form className={styles.form}>
         <button type="button" className={styles.icon}/>
-        <input type="text" className={styles.input} placeholder="Поиск" onChange={debounce}/>
+        <input type="text" className={styles.input} placeholder="Поиск сотрудника" onChange={debounce}/>
         </form>
       </div>
       <Button className={styles.button} type="primary" ghost>

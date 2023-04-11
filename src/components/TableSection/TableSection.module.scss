@@ -1,6 +1,5 @@
 .table {
-  width: 1318px;
-  border-radius: 32px;
+  border-radius: 32px !important;
   background-color: var(--color-white-0) !important;
 }
 
@@ -46,12 +45,12 @@
   letter-spacing: -0.56px;
   font-weight: 600;
   font-family: 'Proxima Nova';
-  margin-right: 253px;
+  margin-right: 25%;
   padding-left: 36px;
 }
 
 .table li:last-child {
-  margin-left: 248px !important;
+  margin-left: 28% !important;
 }
 
 .table li a,

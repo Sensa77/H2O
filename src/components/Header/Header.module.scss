@@ -2,6 +2,11 @@
   display: flex;
   align-items: center;
   padding: 0 38px 49px 40px;
+  justify-content: space-between;
+}
+
+.left {
+  display: flex;
 }
 
 .arrows {
@@ -68,6 +73,7 @@
 .text {
   display: flex;
   flex-direction: column;
+  margin-right: 143px;
 }
 
 .name {
@@ -84,7 +90,7 @@
   font-weight: 600;
 }
 
-.anchor div div a .ant-anchor-link-title-active {
-  color: red !important;
+.iconArrow {
+  color: #B6BCC3;
 }
 
