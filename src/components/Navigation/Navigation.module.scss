@@ -2,10 +2,11 @@
   position: relative;
   background: var(--color-gradient);
   border-radius: 56px 56px 0px 56px;
-  width: 267px;
+  width: 127px;
   height: auto;
   padding-top: 55px;
   padding-left: 32px;
+  padding-right: 31px;
 }
 
 .logo {
@@ -13,13 +14,21 @@
 }
 
 .category {
-  width: fit-content;
-  height: fit-content;
+  width: 64px;
+  height: 64px;
+  text-align: center;
   margin-bottom: 24px;
   border-radius: 16px;
   padding: 11px 11px 9px 11px;
+  cursor: pointer;
+}
+
+.category:hover {
+  background-color: var(--color-green-1);
 }
 
 .active {
   background: var(--color-green-1);
+  width: 64px;
+  height: 64px;
 }

@@ -2,24 +2,9 @@ import React from "react";
 import styles from "./Header.module.scss";
 import { Anchor } from "antd";
 import { Avatar } from "antd";
-import { CaretLeftFilled, CaretRightFilled, DownOutlined } from "@ant-design/icons";
+import { CaretLeftFilled, CaretRightFilled } from "@ant-design/icons";
 import Photo from "./photo.png";
-import { Dropdown, Space, Typography } from "antd";
-
-const item = [
-  {
-    key: "1",
-    label: "Item 1",
-  },
-  {
-    key: "2",
-    label: "Item 2",
-  },
-  {
-    key: "3",
-    label: "Item 3",
-  },
-];
+import { ConfigProvider } from 'antd';
 
 const items = [
   {
@@ -46,6 +31,14 @@ const items = [
 
 const Header = () => {
   return (
+    <ConfigProvider theme={{
+      token: {
+        colorText: 'var(--color-grey-3)',
+        colorPrimary: 'var(--color-grey-0)',
+        padding: 39
+      }
+      
+    }}>
     <div className={styles.header}>
       <div className={styles.arrows}>
         <button className={styles.arrow}>
@@ -56,6 +49,7 @@ const Header = () => {
         </button>
       </div>
       <Anchor
+        className={styles.anchor}
         direction="horizontal"
         items={items}
         style={{ marginRight: 80 }}
@@ -71,22 +65,9 @@ const Header = () => {
             <p className={styles.occupation}>менеджер продаж</p>
           </div>
         </div>
-        {/* <Dropdown
-          menu={{
-            item,
-            selectable: true,
-            defaultSelectedKeys: ["3"],
-          }}
-        >
-          <Typography.Link>
-            <Space>
-              Selectable
-              <DownOutlined />
-            </Space>
-          </Typography.Link>
-        </Dropdown> */}
       </div>
     </div>
+    </ConfigProvider>
   );
 };
 

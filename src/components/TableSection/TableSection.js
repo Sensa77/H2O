@@ -5,7 +5,7 @@ import columns from "../../utils/table";
 import data from "../../utils/data";
 import moment from "moment/moment";
 
-const TableSection = () => {
+const TableSection = ({text}) => {
 
 const addAdditionalFlag = (person, key, value) => {
   return {
@@ -14,6 +14,10 @@ const addAdditionalFlag = (person, key, value) => {
   }
 }
 
+  const filterPerson = data.filter((person) => {
+    return person.name.toLowerCase().includes(text.toLowerCase())
+  })
+
 const checkDate = (date) => {
   const now = moment()
   const personMoment = moment(date, "DD-MM-YYYY");
@@ -21,12 +25,11 @@ const checkDate = (date) => {
   return isAfter
 }
 
-const dataWithValidityFlag = data.map((person) => {
+const dataWithValidityFlag = filterPerson.map((person) => {
   const personValidityPassport = addAdditionalFlag(person, 'afterValidityPassport', checkDate(person.validityPassport));
   const perdonValidityPatent = addAdditionalFlag(personValidityPassport, 'afterValidityPatent', checkDate(person.validityPatent))
   return perdonValidityPatent
 })
-console.log('new', dataWithValidityFlag)
 
   return (
     <div>

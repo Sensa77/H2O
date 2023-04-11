@@ -1,5 +1,6 @@
 .searchSection {
   display: flex;
+  width: 1328px;
   justify-content: space-between;
   padding: 38px 35px 41px 34px;
   background: var(--color-white-0);
@@ -43,6 +44,9 @@
   background-color: var(--color-grey-4);
   border: none;
   border-radius: 24px;
+  font-size: 15px;
+  line-height: 32px;
+  font-weight: 600;
 }
 
 .input::placeholder {
