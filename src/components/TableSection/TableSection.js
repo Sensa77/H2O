@@ -27,27 +27,34 @@ const checkDate = (date) => {
 
 const dataWithValidityFlag = filterPerson.map((person) => {
   const personValidityPassport = addAdditionalFlag(person, 'afterValidityPassport', checkDate(person.validityPassport));
-  const perdonValidityPatent = addAdditionalFlag(personValidityPassport, 'afterValidityPatent', checkDate(person.validityPatent))
-  return perdonValidityPatent
+  const personValidityPatent = addAdditionalFlag(personValidityPassport, 'afterValidityPatent', checkDate(person.validityPatent))
+  return personValidityPatent
 })
 
   return (
     <div>
-      <Table
+      {
+        dataWithValidityFlag.length ? <Table
         className={styles.table}
         columns={columns}
         dataSource={dataWithValidityFlag}
         bordered
         pagination={{
           position: ["bottomCenter"],
-          pageSize: 8,
+          pageSizeOptions: [8, 10, 20],
           showSizeChanger: true,
+          total: dataWithValidityFlag.length,
+          defaultPageSize: 20,
+          defaultCurrent: 1,
+          showTotal: (total, range) => `показано ${range[0]}-${range[1]} из ${total} результатов`
         }}
         size="middle"
         scroll={{
           x: "calc(700px + 50%)",
         }}
       />
+      : <p className={styles.emptyTable}>Нету такого сотрудника</p>
+      }
     </div>
   );
 };

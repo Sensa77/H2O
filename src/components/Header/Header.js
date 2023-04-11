@@ -4,7 +4,9 @@ import { Anchor } from "antd";
 import { Avatar } from "antd";
 import { CaretLeftFilled, CaretRightFilled } from "@ant-design/icons";
 import Photo from "./photo.png";
-import { ConfigProvider } from 'antd';
+import { ConfigProvider } from "antd";
+
+const getCurrentAnchor = () => '#part-2';
 
 const items = [
   {
@@ -31,42 +33,44 @@ const items = [
 
 const Header = () => {
   return (
-    <ConfigProvider theme={{
-      token: {
-        colorText: 'var(--color-grey-3)',
-        colorPrimary: 'var(--color-grey-0)',
-        padding: 39
-      }
-      
-    }}>
-    <div className={styles.header}>
-      <div className={styles.arrows}>
-        <button className={styles.arrow}>
-          <CaretLeftFilled className={styles.leftArrow} />
-        </button>
-        <button className={styles.arrow}>
-          <CaretRightFilled className={styles.rightArrow} />
-        </button>
-      </div>
-      <Anchor
-        className={styles.anchor}
-        direction="horizontal"
-        items={items}
-        style={{ marginRight: 80 }}
-      ></Anchor>
-      <div className={styles.user}>
-        <div className={styles.currentUser}>
-          <Avatar
-            src={Photo}
-            style={{ width: 56, height: 56, marginRight: 23 }}
-          />
-          <div className={styles.text}>
-            <span className={styles.name}>Kristina 🐰</span>
-            <p className={styles.occupation}>менеджер продаж</p>
+    <ConfigProvider
+      theme={{
+        token: {
+          colorText: "var(--color-grey-3)",
+          colorPrimary: "var(--color-grey-0)",
+          padding: 39,
+        },
+      }}
+    >
+      <div className={styles.header}>
+        <div className={styles.arrows}>
+          <button className={styles.arrow} type="button">
+            <CaretLeftFilled className={styles.leftArrow} />
+          </button>
+          <button className={styles.arrow} type="button">
+            <CaretRightFilled className={styles.rightArrow} />
+          </button>
+        </div>
+        <Anchor
+          getCurrentAnchor={getCurrentAnchor}
+          className={styles.anchor}
+          direction="horizontal"
+          items={items}
+          style={{ marginRight: 80 }}
+        ></Anchor>
+        <div className={styles.user}>
+          <div className={styles.currentUser}>
+            <Avatar
+              src={Photo}
+              style={{ width: 56, height: 56, marginRight: 23 }}
+            />
+            <div className={styles.text}>
+              <span className={styles.name}>Kristina 🐰</span>
+              <p className={styles.occupation}>менеджер продаж</p>
+            </div>
           </div>
         </div>
       </div>
-    </div>
     </ConfigProvider>
   );
 };

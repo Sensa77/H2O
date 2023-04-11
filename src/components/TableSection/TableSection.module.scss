@@ -31,11 +31,27 @@
 }
 
 .table ul {
+  justify-content: flex-start !important;
   margin: 33px 0 !important;
 }
 
 .table li {
   margin-left: 19px !important;
+}
+
+.table li:first-child {
+  font-size: 14px;
+  line-height: 44px;
+  color: var(--color-grey-1);
+  letter-spacing: -0.56px;
+  font-weight: 600;
+  font-family: 'Proxima Nova';
+  margin-right: 253px;
+  padding-left: 36px;
+}
+
+.table li:last-child {
+  margin-left: 248px !important;
 }
 
 .table li a,
