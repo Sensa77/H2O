@@ -4,6 +4,7 @@ import { ConfigProvider, Table } from "antd";
 import columns from "../../utils/table";
 import data from "../../utils/data";
 import moment from "moment/moment";
+import { Empty } from 'antd';
 
 const TableSection = ({ text }) => {
   const addAdditionalFlag = (person, key, value) => {
@@ -72,7 +73,7 @@ const TableSection = ({ text }) => {
             />{" "}
           </ConfigProvider>
       ) : (
-        <p className={styles.emptyTable}>Нету такого сотрудника</p>
+        <Empty className={styles.empty}/>
       )}
     </div>
   );

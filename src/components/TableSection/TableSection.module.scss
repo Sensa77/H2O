@@ -59,13 +59,8 @@
   font-weight: 600;
 }
 
-.emptyTable {
-  background-color: var(--color-white-0);
-  border-radius: 32px;
-  padding: 40px;
-  text-align: center;
-  font-size: 16px;
-  line-height: 32px;
-  font-weight: 600;
-  height: 466px;
+.empty {
+  height: 500px;
+  font-size: 18px;
+  font-weight: 400;
 }
