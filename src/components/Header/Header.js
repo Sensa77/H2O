@@ -58,7 +58,7 @@ const items = [
 ];
 
 const getCurrentAnchor = (data) => {
-  if (!data) return window.location.hash;
+  if (!data) return "#part-2";
   return data;
 };
 

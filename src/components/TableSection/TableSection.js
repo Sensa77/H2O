@@ -43,7 +43,7 @@ const TableSection = ({ text }) => {
     pageSizeOptions: [8, 10, 20],
     showSizeChanger: true,
     total: dataWithValidityFlag.length,
-    defaultPageSize: 20,
+    defaultPageSize: 8,
     defaultCurrent: 1,
     showTotal: (total, range) =>
       `показано ${range[0]}-${range[1]} из ${total} результатов`,
