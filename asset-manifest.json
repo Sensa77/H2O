@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/H2O/static/css/main.4dbb86f2.css",
+    "main.js": "/H2O/static/js/main.b4bcee77.js",
+    "static/media/ProximaNova-Semibold.ttf": "/H2O/static/media/ProximaNova-Semibold.dfa26f09d155df035c98.ttf",
+    "static/media/ProximaNova-Bold.ttf": "/H2O/static/media/ProximaNova-Bold.f3c7fec78a9f7f598801.ttf",
+    "static/media/ProximaNova-Extrabld.ttf": "/H2O/static/media/ProximaNova-Extrabld.b27eab22dedaf4921b60.ttf",
+    "static/media/ProximaNova-Black.ttf": "/H2O/static/media/ProximaNova-Black.8bd42e12512786278deb.ttf",
+    "static/media/ProximaNova-Semibold.woff": "/H2O/static/media/ProximaNova-Semibold.9d060ce65c8a91d38e21.woff",
+    "static/media/ProximaNova-Extrabld.woff": "/H2O/static/media/ProximaNova-Extrabld.c611b0015a7f48f62cfc.woff",
+    "static/media/ProximaNova-Black.woff": "/H2O/static/media/ProximaNova-Black.6cad02f9c130d1496ea5.woff",
+    "static/media/ProximaNova-Semibold.woff2": "/H2O/static/media/ProximaNova-Semibold.54b9eb90d4b941f9371e.woff2",
+    "static/media/ProximaNova-Extrabld.woff2": "/H2O/static/media/ProximaNova-Extrabld.51e73062e691a23fb801.woff2",
+    "static/media/ProximaNova-Black.woff2": "/H2O/static/media/ProximaNova-Black.5eca80c598e6bc1bd4af.woff2",
+    "static/media/Logo.svg": "/H2O/static/media/Logo.54e03c9fa4df26692df107d7ce7c53f1.svg",
+    "static/media/Settings.svg": "/H2O/static/media/Settings.f6e5a6ac5d5d9c99987f769a61b93e1c.svg",
+    "static/media/Calendar.svg": "/H2O/static/media/Calendar.c9dc0df4b236eaf1191421e34c5920e7.svg",
+    "static/media/People.svg": "/H2O/static/media/People.000522b2d4bc78d7f2b7532bfa8bed8c.svg",
+    "static/media/Coins.svg": "/H2O/static/media/Coins.75c5537b546a4b9cfc512441d63e7954.svg",
+    "static/media/List.svg": "/H2O/static/media/List.06c17bab85cf8ffeb910b6be439d3b85.svg",
+    "static/media/Chart.svg": "/H2O/static/media/Chart.4078b00002132d053e1a5ccc36f88a74.svg",
+    "static/media/Box.svg": "/H2O/static/media/Box.c20dbc57eb1b88069c23868d6be20102.svg",
+    "static/media/Search.svg": "/H2O/static/media/Search.097e0b585cf9465fec2b.svg",
+    "index.html": "/H2O/index.html",
+    "main.4dbb86f2.css.map": "/H2O/static/css/main.4dbb86f2.css.map",
+    "main.b4bcee77.js.map": "/H2O/static/js/main.b4bcee77.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4dbb86f2.css",
+    "static/js/main.b4bcee77.js"
+  ]
+}
