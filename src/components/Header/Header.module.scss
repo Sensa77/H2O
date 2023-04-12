@@ -49,6 +49,10 @@
   font-weight: 600;
 }
 
+.anchor div div:hover a {
+  color: var(--color-grey-0) !important;
+}
+
 .anchor div {
   width: 752px;
   margin-bottom: 10px;

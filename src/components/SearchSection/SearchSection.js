@@ -26,7 +26,7 @@ const SearchSection = ({setText}) => {
         </div>
         <form className={styles.form}>
         <button type="button" className={styles.icon}/>
-        <input type="text" className={styles.input} placeholder="Поиск сотрудника" onChange={debounce}/>
+        <input type="text" className={styles.input} placeholder="Поиск по имени сотрудника" onChange={debounce}/>
         </form>
       </div>
       <Button className={styles.button} type="primary" ghost>

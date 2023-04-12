@@ -51,26 +51,26 @@ const TableSection = ({ text }) => {
 
   const token = {
     token: {
-      colorPrimary: '#54D3C2',
-    }
-  }
+      colorPrimary: "#54D3C2",
+    },
+  };
 
   return (
     <div className={styles.wrapper}>
       {dataWithValidityFlag.length ? (
-        <ConfigProvider theme={token}>
-          <Table
-            className={styles.table}
-            columns={columns}
-            dataSource={dataWithValidityFlag}
-            bordered
-            pagination={propertiesPagination}
-            size="middle"
-            scroll={{
-              x: "calc(700px + 50%)",
-            }}
-          />{" "}
-        </ConfigProvider>
+          <ConfigProvider theme={token}>
+            <Table
+              className={styles.table}
+              columns={columns}
+              dataSource={dataWithValidityFlag}
+              bordered
+              pagination={propertiesPagination}
+              size="middle"
+              scroll={{
+                x: "calc(700px + 50%)",
+              }}
+            />{" "}
+          </ConfigProvider>
       ) : (
         <p className={styles.emptyTable}>Нету такого сотрудника</p>
       )}
